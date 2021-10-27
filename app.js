@@ -6,13 +6,13 @@ var totalCost = pizzaCount * 8.00;
 
 //console.log, alert, document.write, target html element
 
-alert("Welcome: " + myName);
+alert(" Hi! " + myName );
 
-alert("Pizzas cost $8 per each");
+alert(" Pizzas cost " + pizzaCount + " $ per each ");
 
-alert("Your total is: $" + totalCost);
+alert(" Your total is: $ " + totalCost );
 
-alert("Still Hungry: " + isHungry);
+alert(" Still Hungry: " + isHungry );
 
 
 
