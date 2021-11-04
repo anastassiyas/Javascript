@@ -238,16 +238,10 @@ document.write('Hello World' +'<br/>' );
 }
 
 
-//Puppy Calculator
-function calculateDogAge(age) {
-    var humanYears=document.getElementById("solution").value
-    var dogYears = 7*humanYears;
-    console.log("Your doggie is " + dogYears + " years old in dog years!");
-    document.getElementById("solution1").innerHTML= "Your doggie is " + dogYears + " years old in dog years!" ;
+
+function calCirArea(radius) {
+    var x =Math.PI *2*radius
+    console.log('The final area is' + 'x' + '.');
 }
-
-calculateDogAge(1);
-calculateDogAge(2);
-calculateDogAge(5);
-
-
+    calCirArea(15)
+    
