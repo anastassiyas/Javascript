@@ -38,17 +38,44 @@ console.log("The final area is" + " " + finalArea );
 
 //8
 function init() {
-    alert('Hi');  
-  }
+alert('Hi');  
+}
   
-  setTimeout(init, 5000);
+setTimeout(init, 5000);
 //9
-  function init() {
-    alert('Hi');  
-  }
+function init() {
+alert('Hi');  
+}
   
-  setInterval(init, 5000); 
+setInterval(init, 5000); 
 
+//The Geometrizer
 
+//Create 2 functions that calculate properties of a circle, using the definitions here.
+
+//Create a function called calcCircumfrence:
+
+//Pass the radius to the function.
+//Calculate the circumference based on the radius, and output "The circumference is NN".
+
+function calcCircumfrence(radius) {
+    var a = (Math.PI * radius) * 2;
+    console.log(" The circumfrence is " + a + " . ");
+      }
+    //Create a function called calcArea:
+    
+    function calcArea(radius) {
+    var b = (Math.PI * radius) * radius;
+    console.log(" The area is " + b + " . ");
+    }
+    
+    //Pass the radius to the function.
+    //Calculate the area based on the radius, and output "The area is NN".
+    
+    calcCircumfrence(10);
+    calcArea(5);
+    
+    
+    
     
 
