@@ -117,7 +117,6 @@ var withSyed = donuts.concat ("Bob");
 console.log(donuts.concat("Bob"));
 //12 **Create a function called getdonuts() that will display all the donuts in your array and display on your page.
 function getdonuts(){
-
 document.getElementById("demo").innerHTML = donuts;
 }
 
