@@ -245,3 +245,12 @@ function calCirArea(radius) {
 }
     calCirArea(15)
     
+//Array Literal
+//WE assign to Array to a variable
+const colors=[`brown`, `pink`,`blue`, `teal`, `red`]
+const myAges=[10, 13, 16, 18, 21]
+const compNums=[12>12, 9===`nine`, 1==2, `eight`===`EIGHT`, 5>=5]
+
+//JS Keyword build-in JAvascript methods new Array()
+var colors=new Array(`brown`,`pink`,`blue`, `teal`, `red`);
+var myAges=new Array(10, 13, 16, 18, 21)

@@ -74,8 +74,59 @@ function calcCircumfrence(radius) {
     
     calcCircumfrence(10);
     calcArea(5);
-    
-    
+
+
+
+//Create an Array called "donuts" that list 7-10 different items
+var donuts=[`chocolate`, `glazed`, `strawberry`, `cinnamon twist`, `jelly`, `blueberry`,
+ `sprinkle`, `cruller`];
+//1 Using a loop, literate through this array and console.log all the donuts
+for(let i = 0; i < donuts.length; i++){
+    console.log(donuts);
+ } 
+//2 Write the command to remove the first donut fron the array
+//donuts=[`chocolate`, `glazed`, `strawberry`, `cinnamon twist`, `jelly`, `blueberry`,
+ //`sprinkle`, `cruller`];
+donuts.shift();
+console.log(donuts);
+//3 Write the command to remove the last donuts from the array
+donuts.pop();
+console.log(donuts);
+//4 Write the command to add a new donut "lime zest" to the front of the array
+donuts.unshift(`lime zest`);
+console.log(donuts);
+//5 Write the command to add another donut "lemon pie" to the end of the array
+donuts.push(`lemon pie`);
+console.log(donuts);
+//6 Use either the join() or toString() method to convert an array to a string.
+[`chocolate`, `glazed`, `strawberry`, `cinnamon twist`, `jelly`, `blueberry`,
+ `sprinkle`, `cruller`].toString();
+[`chocolate`, `glazed`, `strawberry`, `cinnamon twist`, `jelly`, `blueberry`,
+ `sprinkle`, `cruller`].join();
+  
+//7 Write the command to make a copy of the array using slice. The copy should NOT include two donuts.
+donuts.slice(2);
+//8 Write the command that gives the indexOf where "chocolate" is located.
+donuts.indexOf("chocolate");
+//9 Write the command that gives the indexOf where "glazed" is located (You may get a negative number).
+donuts.indexOf("glazed");
+//10 **Using the splice method, remove one donut from the array and add another.
+donuts.splice(2, "caramel");
+//11 **Create a new variable called withSyed and set it equal to the people array concatenated with the string of "Bob".
+var withSyed = donuts.concat ("Bob");
+console.log(donuts.concat("Bob"));
+//12 **Create a function called getdonuts() that will display all the donuts in your array and display on your page.
+function getdonuts(){
+
+document.getElementById("demo").innerHTML = donuts;
+}
+
+
+
+
+
+
+
     
     
 
