@@ -1,3 +1,32 @@
+//  The Reading List
+var books = [ 
+  {title: "It", 
+  author: "Stephen King", 
+  alreadyRead : true},
+  {title: "Pride and Prejudice", 
+  author: "Jane Austen", 
+  alreadyRead : false},
+  {title: " The Great Gatsby", 
+  author: "Scott Fitzgerald", 
+  alreadyRead : true}
+  ];
+
+for (var i = 0; i < books.length; i++ ){
+  if (books[i].alreadyRead === true){
+    console.log("You already read "+books[i].title+" by " + books[i].author);
+
+  } else if (books[i].alreadyRead === false){
+    console.log("You still need to read "+books[i].title+" by "+books[i].author+".");
+
+  }
+}
+
+
+
+
+
+
+
 //4. The area of a circle is πr² where r is the circle’s radius.
 // Provide a JavaScript expression to return a circle’s area where the radius has been
 // stored in a variable named radius.
@@ -119,30 +148,6 @@ console.log(donuts.concat("Bob"));
 function getdonuts(){
 document.getElementById("demo").innerHTML = donuts;
 }
-
-//  The Reading List
-var books = [ 
-  {title: "It", 
-  author: "Stephen King", 
-  alreadyRead : true},
-  {title: "Pride and Prejudice", 
-  author: "Jane Austen", 
-  alreadyRead : false},
-  {title: " The Great Gatsby", 
-  author: "Scott Fitzgerald", 
-  alreadyRead : true}
-  ];
-
-for (var i = 0; i < books.length; i++ ){
-  if (books[i].alreadyRead === true){
-    console.log("You already read "+books[i].title+" by " + books[i].author);
-
-  } else if (books[i].alreadyRead === false){
-    console.log("You still need to read "+books[i].title+" by "+books[i].author+".");
-
-  }
-}
-
 
 
 
