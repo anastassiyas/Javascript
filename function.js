@@ -78,6 +78,7 @@ function calcCircumfrence(radius) {
 
 
 //Create an Array called "donuts" that list 7-10 different items
+
 var donuts=[`chocolate`, `glazed`, `strawberry`, `cinnamon twist`, `jelly`, `blueberry`,
  `sprinkle`, `cruller`];
 //1 Using a loop, literate through this array and console.log all the donuts
@@ -85,8 +86,7 @@ for(let i = 0; i < donuts.length; i++){
     console.log(donuts);
  } 
 //2 Write the command to remove the first donut fron the array
-//donuts=[`chocolate`, `glazed`, `strawberry`, `cinnamon twist`, `jelly`, `blueberry`,
- //`sprinkle`, `cruller`];
+
 donuts.shift();
 console.log(donuts);
 //3 Write the command to remove the last donuts from the array
@@ -118,6 +118,29 @@ console.log(donuts.concat("Bob"));
 //12 **Create a function called getdonuts() that will display all the donuts in your array and display on your page.
 function getdonuts(){
 document.getElementById("demo").innerHTML = donuts;
+}
+
+//  The Reading List
+var books = [ 
+  {title: "It", 
+  author: "Stephen King", 
+  alreadyRead : true},
+  {title: "Pride and Prejudice", 
+  author: "Jane Austen", 
+  alreadyRead : false},
+  {title: " The Great Gatsby", 
+  author: "Scott Fitzgerald", 
+  alreadyRead : true}
+  ];
+
+for (var i = 0; i < books.length; i++ ){
+  if (books[i].alreadyRead === true){
+    console.log("You already read "+books[i].title+" by " + books[i].author);
+
+  } else if (books[i].alreadyRead === false){
+    console.log("You still need to read "+books[i].title+" by "+books[i].author+".");
+
+  }
 }
 
 
